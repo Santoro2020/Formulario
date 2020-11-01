@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editnombre"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@id/tvfechanacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtnombre"
+        tools:text="Fecha de Nacimiento">
+
+    </TextView>
+
+    <DatePicker
+        android:id="@+id/dpfechanacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/tvfechanacimiento">
+    </DatePicker>
+
+    <EditText
+        android:id="@+id/edttelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dpfechanacimiento"
+        android:hint="@string/edittelefono"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttelefono"
+        android:importantForAutofill="no"
+        android:hint="@string/editemail" />
+
+    <EditText
+        android:id="@+id/edtdescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemail"
+        android:importantForAutofill="no"
+        android:hint="@string/editdescripcion" />
+
+    <Button
+        android:id="@+id/btnenviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtdescripcion"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonenviar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="@color/teal_200" />
+
+</RelativeLayout>

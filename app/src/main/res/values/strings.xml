@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="editnombre">Nombre</string>
+    <string name="edittelefono">Telefono</string>
+    <string name="editemail">Email</string>
+    <string name="editdescripcion">Descripcion</string>
+    <string name="botonenviar">Siguiente</string>
+    <string name="botonedit">Editar</string>
+</resources>
